@@ -1,0 +1,37 @@
+doctype html
+html(lang="ru")
+    head
+        include include/head.jade
+    body
+        .fade
+        include include/home.jade
+        include include/header.jade
+        
+                                
+        .home-abs#home-abs
+            video(poster="img/homeg.jpg" id="bgvid" playsinline autoplay muted loop)
+                source(src="http://qwertydesign.ru/Macao.mp4" type="video/mp4")
+                source(src="http://qwertydesign.ru/Macao.webm" type="video/webm")
+            .fakebg
+        .inner#inner
+            .wrap
+                include include/about.jade
+                include include/window.jade
+                include include/tomakao.jade
+                include include/center-slide.jade
+                include include/info.jade
+                include include/news.jade
+                include include/window_2.jade
+                include include/tur.jade
+                include include/app.jade
+                include include/footer.jade
+            
+                
+                        
+
+                        
+        
+            
+                            
+                            
+                            
