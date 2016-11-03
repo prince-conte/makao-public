@@ -2,7 +2,7 @@
 
      
  var topHeight = $(window).height();
-     clickInfo = 0;
+     
      
     if ( topHeight < 500 ) {
         
@@ -135,19 +135,126 @@ return false;
    
 
      
+  
      
+  
      
-     
-     
-    // prev-info 
-     
-    $("#center .slick-prev").click(function () {  
-    var destination = $('#info').offset().top;    
-    if ( clickInfo == 0 ) {
+$('.center').on('afterChange', function(event, slick, direction){
+  console.log(direction);
+  // left
+    
+        
+          
+        
+    var destination = $('#info').offset().top; 
+    var clickInfo = $('.center').slick('slickCurrentSlide');  var clickInfo = $('.center').slick('slickCurrentSlide');
+    //alert(clickInfo)
+        
+        
+    if ( clickInfo == 1 ) {
+    $('.info article').fadeOut(0);
+    $('#art2').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);     
+        
+   
+    } 
+        
+    else if ( clickInfo == 1 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art2').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+         
+    }
+        
+    else if ( clickInfo == 2 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art3').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+         
+    }
+        
+    else if ( clickInfo == 3 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art4').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+
+        
+         
+    }
+        
+    else if ( clickInfo == 4 ) {
+        
     $('.info article').fadeOut(0);
     $('#art5').fadeIn(0);
     jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
-    clickInfo =  4;   
+
+        
+         
+    } 
+    
+    else if ( clickInfo == 0 ) {
+    $('.info article').fadeOut(0);
+    $('#art1').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+
+        
+   
+    } 
+        
+    else if ( clickInfo == 1 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art2').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+
+         
+    }
+        
+    else if ( clickInfo == 2 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art3').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+
+         
+    }
+        
+    else if ( clickInfo == 3 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art4').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+         
+    }
+        
+    else if ( clickInfo == 4 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art5').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+
+         
+    }
+
+
+    
+}); 
+     
+     
+     
+  $('.center').on('edge', function(event, slick, direction){
+  console.log('edge was hit')
+      var destination = $('#info').offset().top;  
+            
+        
+        
+    if ( clickInfo == 0 ) {
+    $('.info article').fadeOut(0);
+    $('#art5').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);     
         
    
     } 
@@ -157,7 +264,6 @@ return false;
     $('.info article').fadeOut(0);
     $('#art1').fadeIn(0);
     jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
-    clickInfo =  clickInfo - 1;
          
     }
         
@@ -166,7 +272,6 @@ return false;
     $('.info article').fadeOut(0);
     $('#art2').fadeIn(0);
     jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
-    clickInfo =  clickInfo - 1;
          
     }
         
@@ -175,7 +280,6 @@ return false;
     $('.info article').fadeOut(0);
     $('#art3').fadeIn(0);
     jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
-    clickInfo =  clickInfo - 1;
          
     }
         
@@ -184,70 +288,14 @@ return false;
     $('.info article').fadeOut(0);
     $('#art4').fadeIn(0);
     jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
-    clickInfo =  clickInfo - 1;
          
     }
-
-
-     });       
+  
+  
+});     
      
      
      
-    // next-info 
-     
-    $("#center .slick-next").click(function () {  
-    var destination = $('#info').offset().top;    
-    if ( clickInfo == 0 ) {
-    $('.info article').fadeOut(0);
-    $('#art2').fadeIn(0);
-    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
-    clickInfo =  clickInfo + 1;   
-        
-   
-    } 
-        
-    else if ( clickInfo == 1 ) {
-        
-    $('.info article').fadeOut(0);
-    $('#art3').fadeIn(0);
-    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
-    clickInfo =  clickInfo + 1;
-         
-    }
-        
-    else if ( clickInfo == 2 ) {
-        
-    $('.info article').fadeOut(0);
-    $('#art4').fadeIn(0);
-    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
-    clickInfo =  clickInfo + 1;
-         
-    }
-        
-    else if ( clickInfo == 3 ) {
-        
-    $('.info article').fadeOut(0);
-    $('#art5').fadeIn(0);
-    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
-    clickInfo =  clickInfo + 1;
-        
-         
-    }
-        
-    else if ( clickInfo == 4 ) {
-        
-    $('.info article').fadeOut(0);
-    $('#art1').fadeIn(0);
-    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
-    clickInfo =  0;
-        
-         
-    }
-
-
-     });       
-     
-
      
      
      
