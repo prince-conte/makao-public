@@ -1,5 +1,4 @@
 .about
-    height 1055px
     bgP(top,center,cover)
     background url(../img/about-bg.png)
     padding-top 140px
@@ -14,23 +13,26 @@
     article
         float(100%)
         position relative
+        margin-top 40px
         
         p
-            float-w(37%)
+            float-w(100%)
             padding-right 60px
             font-size 20px
             color coltxt
             line-height 30px
+            margin 0
         
     h2
         color coltxt2
         
         
     .about__slider
-        abs(block,100%,auto,auto,auto)
-        bottom:30px
-        right -37%
+        float left
         width 100%
+        right 0%
+        width 100%
+        margin-top 76px
         
         
         a
@@ -47,7 +49,7 @@
         border-radius 50%
         top 50%
         margin-top -29px
-        right  25%
+        right  190px
         margin-left -29px
         overflow hidden
         
@@ -57,6 +59,47 @@
             opacity .65
             border-radius 50%
             m-speed(0.3s)
+
+            
+        span 
+            position absolute
+            width 14px
+            height 2px
+            pov(45deg)
+            top 23px
+            left 23px
+            background #fff
+                
+        span::before 
+            content ''
+            position absolute
+            width 100%
+            height 100%
+            top 7px
+            left 7px
+            pov(-90deg)
+            background #fff
+                    
+    .slick-prev
+        position absolute
+        width 58px
+        height 58px
+        border-radius 50%
+        top 50%
+        margin-top -29px
+        left  190px
+        margin-left -29px
+        overflow hidden
+        pov(180deg)
+        z-index: 9999;
+        
+        .phbg
+            abs(block,100%,100%,0px,0px)
+            background #000
+            opacity .65
+            border-radius 50%
+            m-speed(0.3s)
+            
 
             
         span 
@@ -115,20 +158,7 @@
             margin-top 33px;
             display inline-block
         
-
-            
-@media (min-width: 2400px)
-    
-    .about
-        height: 1300px;
-             
-        
-        .about__slider
-            right: -57%;
-            width: 120%;
-            bottom: 162px
-
-                   
+           
     
 
     
@@ -137,14 +167,14 @@
 @media (max-width: 1600px) and (min-width: 1400px)
     
     .about
-        height: 1025px;
              
-        
-        .about__slider
-            right: -18%;
-            width: 80%;
-            bottom: 0px
 
+        .slick-next
+            right 130px
+    
+           
+        .slick-prev
+            left 130px
     
             
             
@@ -155,21 +185,21 @@
 @media (max-width: 1399px) and (min-width: 1024px)
     
     .about
-        height: 1100px;
              
-        
-        .about__slider
-            right: -18%;
-            width: 80%;
-            bottom: 0px
 
-        
+        .slick-next
+            right 100px
+    
+           
+        .slick-prev
+            left 100px
+    
+            
+                
             
 @media (max-width: 1023px) and (min-width: 768px)
     
     .about
-        height: 1300px;
-        
      
         article
             padding 0
@@ -190,9 +220,15 @@
             width: 58px;
             height: 58px;
             top: 50%;
-            margin-top: -14px;
+            margin-top: -29px;
             right: 10%;
-            margin-left: -29px;
+            
+        .slick-prev 
+            width: 58px;
+            height: 58px;
+            top: 50%;
+            margin-top: -29px;
+            left: 10%;
 
         
     

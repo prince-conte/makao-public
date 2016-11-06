@@ -53,7 +53,7 @@ $('.autoplay').slick({
  $('#news1').fadeOut(1000);        
  $('#news2').fadeOut(1000);        
  $('.news__button-block a').removeClass('active');
- $('#mont3#').addClass('active');
+ $('#mont3').addClass('active');
  
        
  });    
@@ -64,7 +64,7 @@ $('.autoplay').slick({
      
 $('.multiple-items').slick({
   infinite: true,
-  slidesToShow: 2,
+  slidesToShow: 3,
   slidesToScroll: 1
 });
      
