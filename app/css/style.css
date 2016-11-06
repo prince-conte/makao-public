@@ -512,16 +512,16 @@ header .header__nav-block nav ul li .button:hover {
   display: block;
   text-transform: uppercase;
   position: relative;
-  top: -50px;
-  left: 16px;
+  top: -35px;
+  left: 2px;
 }
 .home .home__table article .button-block {
   position: relative;
-  top: -50px;
+  top: -35px;
 }
 @media (max-width: 1400px) and (min-width: 1280px) {
   .home .home__table article h1 {
-    font-size: 220px;
+    font-size: 200px;
   }
 }
 @media (max-width: 1279px) and (min-width: 1024px) {
@@ -529,7 +529,7 @@ header .header__nav-block nav ul li .button:hover {
     padding: 25px;
   }
   .home .home__table article h1 {
-    font-size: 220px;
+    font-size: 200px;
   }
 }
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -1041,7 +1041,7 @@ header .header__nav-block nav ul li .button:hover {
 }
 .tomakao .tomakao__floating .tomakao__floating_item-t {
   float: left;
-  width: 405px;
+  width: 425px;
   padding-left: 45px;
   border-left: solid 1px #dbdbdb;
   padding-bottom: 20px;
@@ -1060,7 +1060,7 @@ header .header__nav-block nav ul li .button:hover {
 }
 .tomakao .tomakao__floating .tomakao__floating_item-t .tomakao__floating_item-l .tomakao__floating_item_txt {
   float: left;
-  width: 248px;
+  width: 255px;
   height: 98px;
 }
 .tomakao .tomakao__floating .tomakao__floating_item-t .tomakao__floating_item-l .tomakao__floating_item_txt .tomakao__floating_item_titl {
