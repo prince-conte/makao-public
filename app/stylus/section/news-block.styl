@@ -1,7 +1,22 @@
 .news
     padding-top 76px
-    bgP(center,center,contain)
-    background url(../img/appbg.jpg)
+
+    position relative
+    
+    
+    .new__bg 
+        position absolute
+        display block
+        width 1280px
+        bgP(center,center,contain)
+        background url(../img/appbg.jpg)
+        top 0px
+        right 0px
+        height 890px
+        
+        
+    
+    
     h3
         float-w(100%)
         margin-bottom 55px
@@ -89,6 +104,24 @@
                 margin-top 20px
     #news1
         display block
+        
+@media (min-width: 2100px)
+    
+    .news
+        padding-top 76px
+        position relative
+    
+        .new__bg 
+            position absolute
+            display block
+            width 2280px
+            bgP(center,center,contain)
+            background url(../img/appbg.jpg)
+            top 0px
+            right 0px
+            height 1390px
+    
+    
                 
                 
                 
